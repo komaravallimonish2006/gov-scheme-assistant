@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+
+# Environment Variables (Keep API keys secret!)
+.env
+**/.env
+**/.env*.local
+!.env.example
+
+# Vector Database local storage
+backend/data/chroma_db/*
+!backend/data/chroma_db/store.json
+backend/data/raw_pdfs/*.tmp
+!backend/data/raw_pdfs/*.pdf
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+.npm
+.eslintcache
+
+# Testing & Cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
